@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');//mongoose is a JS library that works with MongoDB
 
+mongoose.set("strictQuery", false); // 👈 thêm dòng này để tắt cảnh báo
 
 const connectDb = async () => {//an async function to prevent blocking
     try{
